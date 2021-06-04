@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discipulos do TODO</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <h1>Lista To-do</h1>
+      </header>
+
+      <!-- Add  -->
+      <section>
+        <form class="add-task" id="form-add-task">
+          <input
+            type="text"
+            name="task"
+            id="task"
+            required
+            class="input"
+            placeholder="Digite sua tarefa"
+          />
+          <button type="submit" id="addTask">+</button>
+        </form>
+      </section>
+
+      <!-- Items -->
+      <section id="all-tasks" class="all-tasks">
+        <template id="template-task">
+          <article>
+            <p>Texto da tarefa</p>
+            <img
+              id="delete-task"
+              width="20px"
+              src="./src/assets/delete.svg"
+              alt="Ícone Delete"
+            />
+          </article>
+        </template>
+      </section>
+    </div>
+    <span class="discipulos">Discipulos do Solid</span>
+    <script type="module" src="/src/js/main.ts"></script>
+  </body>
+</html>
